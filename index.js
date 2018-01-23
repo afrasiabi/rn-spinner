@@ -95,7 +95,7 @@ var Spinner = React.createClass({
 
     if (this.state.min < this.state.num) {
       var num = this.state.num - 1
-      if (typeof this.props.value === 'undefined') {
+      if (typeof this.props.value !== 'undefined') {
         this.setState({
           num: num
         })
